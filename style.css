@@ -1,0 +1,56 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#172033;background:#f7f9fc;line-height:1.6}
+a{text-decoration:none}.container{width:min(1120px,90%);margin:0 auto}
+
+.navbar{background:#fff;border-bottom:1px solid #e6eaf0;position:sticky;top:0;z-index:1000}
+.nav-container{min-height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.35rem;font-weight:800;color:#172033;letter-spacing:-.5px}.logo span{color:#25eb50}
+.nav-links{list-style:none;display:flex;gap:30px}.nav-links a{color:#4b5563;font-size:.95rem;font-weight:600;transition:.2s}
+.nav-links a:hover{color:#25eb50}
+
+.hero{background:linear-gradient(135deg,#eef5ff 0%,#fff 60%);padding:90px 0}
+.hero-content{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:center}
+.tagline,.section-label{color:#25eb50;font-size:.78rem;font-weight:800;letter-spacing:1.5px;margin-bottom:12px}
+.hero h1{max-width:680px;font-size:clamp(2.4rem,5vw,4.2rem);line-height:1.08;letter-spacing:-2px;margin-bottom:22px}
+.hero-description{max-width:650px;color:#5b6577;font-size:1.08rem;margin-bottom:30px}
+.hero-buttons{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:700;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.primary-btn{color:#fff;background:#25eb50;box-shadow:0 8px 18px rgba(29, 222, 78, 0.241)}
+.secondary-btn{color:#25eb50;background:#fff;border:1px solid #cbd5e1}
+.hero-card{background:#fff;padding:38px;border-radius:18px;border:1px solid #e2e8f0;box-shadow:0 20px 50px rgba(29, 222, 78, 0.241)}
+.card-icon{width:58px;height:58px;display:grid;place-items:center;background:#eaf2ff;border-radius:14px;font-size:1.8rem;margin-bottom:22px}
+.hero-card h2{margin-bottom:10px;font-size:1.55rem}.hero-card p{color:#667085;margin-bottom:22px}
+.mini-services{display:flex;gap:8px;flex-wrap:wrap}.mini-services span{background:#f1f5f9;color:#334155;padding:7px 11px;border-radius:20px;font-size:.82rem;font-weight:600}
+
+.services-section{padding:85px 0;background:#fff}
+.section-heading{text-align:center;max-width:680px;margin:0 auto 45px}
+.section-heading h2,.about-section h2,.contact-section h2{font-size:2.25rem;line-height:1.2;margin-bottom:12px}
+.section-heading>p:last-child{color:#667085}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.service-card{padding:30px;border:1px solid #e2e8f0;border-radius:14px;background:#fff;transition:.2s}
+.service-card:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(29, 222, 78, 0.241)}
+.service-icon{width:56px;height:56px;display:grid;place-items:center;border-radius:12px;font-size:1.65rem;margin-bottom:20px}
+.plumbing{background:#eaf4ff}.electricity{background:#fff7d6}.internet{background:#eafaf1}
+.service-card h3{font-size:1.3rem;margin-bottom:10px}.service-card p{color:#667085;font-size:.95rem;margin-bottom:20px}
+.service-link{color:#25eb50;font-weight:700;font-size:.92rem}
+
+.about-section{padding:75px 0;background:#f7f9fc}
+.about-content{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.about-content>p{color:#5f6b7a;font-size:1.03rem}
+
+.contact-section{padding:75px 0;background:#fff}.contact-box{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:42px;background:#eef5ff;border-radius:18px}
+.contact-section p:last-child{color:#667085}
+
+footer{background:#172033;color:#d9e0ea;padding:24px 0}.footer-content{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.85rem}
+
+@media(max-width:850px){
+.hero-content,.about-content{grid-template-columns:1fr}.hero{padding:65px 0}.hero-card{max-width:600px}
+.service-grid{grid-template-columns:1fr}.contact-box{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:650px){
+.nav-container{min-height:65px}.nav-links{gap:12px}.nav-links a{font-size:.82rem}.logo{font-size:1.05rem}
+.hero h1{letter-spacing:-1px}.hero-buttons{flex-direction:column;align-items:stretch}.btn{text-align:center}
+.section-heading h2,.about-section h2,.contact-section h2{font-size:1.8rem}.contact-box{padding:30px}
+}
