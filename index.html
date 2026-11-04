@@ -1,117 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hostel Service Hub</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Hostel Service Hub</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="navbar">
-  <div class="container nav-container">
-    <a class="logo" href="#home">Hostel<span>Service</span>Hub</a>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+<header class="site-header">
+  <div class="container nav-wrapper">
+    <a href="index.html" class="logo"><span class="logo-mark">HS</span><span>Hostel<span class="logo-accent">Service</span> Hub</span></a>
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html" class="">Services</a>
+      <a href="about.html" class="">About Us</a>
+      <a href="contact.html" class="">Contact</a>
     </nav>
+    <a href="services.html" class="nav-button">Find a Service</a>
   </div>
 </header>
 
 <main>
-<section class="hero" id="home">
-  <div class="container hero-content">
-    <div>
-      <p class="tagline">HOSTEL MAINTENANCE SERVICES</p>
-      <h1>Get the right service for your hostel needs.</h1>
-      <p class="hero-description">
-        Hostel Service Hub helps students quickly find essential hostel
-        service providers for plumbing, electricity, and internet/network work.
-      </p>
-      <div class="hero-buttons">
-        <a href="#services" class="btn primary-btn">View Services</a>
-        <a href="#about" class="btn secondary-btn">Learn More</a>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <p class="eyebrow">SOUTH ASIAN UNIVERSITY • HOSTEL SERVICES</p>
+      <h1>Essential hostel services, <span>all in one place.</span></h1>
+      <p class="hero-text">Quickly find the right service provider for plumbing, electricity, and internet/network work in your hostel.</p>
+      <div class="hero-actions">
+        <a href="services.html" class="primary-button">Explore Services <span>→</span></a>
+        <a href="contact.html" class="secondary-button">Contact Us</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>03</strong><span>Essential Services</span></div>
+        <div><strong>24/7</strong><span>Availability Info</span></div>
+        <div><strong>01</strong><span>Simple Platform</span></div>
       </div>
     </div>
-
     <div class="hero-card">
-      <div class="card-icon">⚙</div>
-      <h2>Essential Hostel Services</h2>
-      <p>One simple platform to access the service information you need.</p>
-      <div class="mini-services">
-        <span>Plumbing</span><span>Electricity</span><span>Internet</span>
+      <div class="hero-card-top"><span class="status-dot"></span><span>HOSTEL SERVICE HUB</span></div>
+      <div class="service-preview"><div class="preview-icon blue">⌁</div><div><small>NEED HELP WITH?</small><h3>Choose your service</h3></div></div>
+      <div class="preview-list">
+        <div><span>01</span> Plumbing <b>→</b></div>
+        <div><span>02</span> Electricity <b>→</b></div>
+        <div><span>03</span> Internet / Network <b>→</b></div>
       </div>
+      <p class="card-note">Find service-provider information and availability in a few clicks.</p>
     </div>
   </div>
 </section>
-
-<section class="services-section" id="services">
-  <div class="container">
-    <div class="section-heading">
-      <p class="section-label">OUR SERVICES</p>
-      <h2>What do you need help with?</h2>
-      <p>Choose the service you require and find the relevant hostel service provider.</p>
-    </div>
-
-    <div class="service-grid">
-      <article class="service-card">
-        <div class="service-icon plumbing">🔧</div>
-        <h3>Plumbing</h3>
-        <p>Find information about plumbing service providers for water supply, taps, pipes, and other plumbing work.</p>
-        <a href="#" class="service-link">View Service →</a>
-      </article>
-
-      <article class="service-card">
-        <div class="service-icon electricity">⚡</div>
-        <h3>Electricity</h3>
-        <p>Access information about electrical service providers for hostel electrical and power-related work.</p>
-        <a href="#" class="service-link">View Service →</a>
-      </article>
-
-      <article class="service-card">
-        <div class="service-icon internet">🌐</div>
-        <h3>Internet / Network</h3>
-        <p>Find the relevant service provider for internet and network-related technical assistance in the hostel.</p>
-        <a href="#" class="service-link">View Service →</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="about-section" id="about">
-  <div class="container about-content">
-    <div>
-      <p class="section-label">ABOUT THE PROJECT</p>
-      <h2>Simple. Organized. Hostel-focused.</h2>
-    </div>
-    <p>
-      Hostel Service Hub is a student-focused web application designed to make
-      essential hostel service information easier to access. The project
-      focuses only on plumbing, electricity, and internet/network services.
-    </p>
-  </div>
-</section>
-
-<section class="contact-section" id="contact">
+<section class="contact-section">
   <div class="container contact-box">
-    <div>
-      <p class="section-label">CONTACT</p>
-      <h2>Need service information?</h2>
-      <p>Use the service sections above to find the appropriate provider.</p>
-    </div>
-    <a href="mailto:123@123.123" class="btn primary-btn">Contact Us</a>
+    <div><p class="eyebrow">HOSTEL SERVICE HUB</p><h2>Everyday hostel help, made easier.</h2><p>Explore essential services and find the right provider for your requirement.</p></div>
+    <a href="services.html" class="primary-button">View Services <span>→</span></a>
   </div>
 </section>
+
 </main>
 
-<footer>
-  <div class="container footer-content">
-    <p>2026 Hostel Service Hub</p>
-    <p>South Asian University</p>
+<footer class="site-footer">
+  <div class="container footer-wrapper">
+    <div>
+      <a href="index.html" class="logo footer-logo"><span class="logo-mark">HS</span><span>Hostel<span class="logo-accent">Service</span> Hub</span></a>
+      <p>Connecting hostel residents with essential services.</p>
+    </div>
+    <div class="footer-right">
+      <p>Fundamentals of Web Development</p>
+      <p>South Asian University • 2026</p>
+    </div>
   </div>
 </footer>
 
