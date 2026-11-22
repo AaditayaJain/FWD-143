@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services | Hostel Service Hub</title>
   <link rel="stylesheet" href="style.css">
+  <script src="search-filter.js" defer></script>
 </head>
 <body>
 
@@ -15,9 +16,8 @@
       <a href="index.html" class="">Home</a>
       <a href="services.html" class="active">Services</a>
       <a href="about.html" class="">About Us</a>
-      <a href="contact.html" class="">Contact</a>
     </nav>
-    <a href="services.html" class="nav-button">Find a Service</a>
+    <a href="complaint.html" class="nav-button">Register Complaint</a>
   </div>
 </header>
 
@@ -39,10 +39,22 @@
 <section id="providers" class="providers-section">
   <div class="container">
     <div class="section-heading"><div><p class="eyebrow">SERVICE PROVIDERS</p><h2>Find the right person</h2></div><p>Basic provider information helps residents choose the appropriate service for their requirement.</p></div>
+    <div class="provider-search-controls">
+      <label for="providerSearch">Search service providers</label>
+      <input type="search" id="providerSearch" placeholder="Search by name or service..." aria-label="Search providers by name or service">
+      <label for="providerCategory">Filter by service</label>
+      <select id="providerCategory" aria-label="Filter providers by service">
+        <option value="all">All Services</option>
+        <option value="plumbing">Plumbing</option>
+        <option value="electricity">Electricity</option>
+        <option value="internet">Internet / Network</option>
+      </select>
+    </div>
+    <p id="providerNoResults" class="provider-no-results" hidden>No matching service providers found.</p>
     <div class="provider-grid">
-      <article class="provider-card"><div class="provider-avatar">RK</div><div class="provider-info"><span class="provider-tag">PLUMBING</span><h3>Dhruv Jindal</h3><p>Hostel Plumbing Services</p><div class="provider-meta"><span>● Available</span><span>☎ 98XX XXX XXX</span></div></div><a href="contact.html" class="contact-button">Contact</a></article>
-      <article class="provider-card"><div class="provider-avatar">AS</div><div class="provider-info"><span class="provider-tag">ELECTRICITY</span><h3>Yashwardhan Tiwari</h3><p>Hostel Electrical Services</p><div class="provider-meta"><span>● Available</span><span>☎ 98XX XXX XXX</span></div></div><a href="contact.html" class="contact-button">Contact</a></article>
-      <article class="provider-card"><div class="provider-avatar">NM</div><div class="provider-info"><span class="provider-tag">INTERNET / NETWORK</span><h3>Himanshu Rohilla</h3><p>Network Support Services</p><div class="provider-meta"><span>● Available</span><span>☎ 98XX XXX XXX</span></div></div><a href="contact.html" class="contact-button">Contact</a></article>
+      <article class="provider-card"><div class="provider-avatar">RK</div><div class="provider-info"><span class="provider-tag">PLUMBING</span><h3>Dhruv Jindal</h3><p>Hostel Plumbing Services</p><div class="provider-meta"><span>● Available</span><span>☎ 98XX XXX XXX</span></div></div></article>
+      <article class="provider-card"><div class="provider-avatar">AS</div><div class="provider-info"><span class="provider-tag">ELECTRICITY</span><h3>Yashwardhan Tiwari</h3><p>Hostel Electrical Services</p><div class="provider-meta"><span>● Available</span><span>☎ 98XX XXX XXX</span></div></div></article>
+      <article class="provider-card"><div class="provider-avatar">NM</div><div class="provider-info"><span class="provider-tag">INTERNET / NETWORK</span><h3>Himanshu Rohilla</h3><p>Network Support Services</p><div class="provider-meta"><span>● Available</span><span>☎ 98XX XXX XXX</span></div></div></article>
     </div>
   </div>
 </section>
